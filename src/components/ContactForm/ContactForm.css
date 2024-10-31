@@ -1,0 +1,57 @@
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 500px;
+}
+
+.contact__name, .contact__email {
+    padding: 5px;
+    margin-bottom: 10px;
+
+    border: 1px solid #0003;
+    border-radius: 5px;
+}
+
+.contact__name:focus,
+.contact__email:focus,
+.contact__message:focus {
+    outline: 1px solid cornflowerblue;
+}
+
+.contact__message {
+    min-height: 150px;
+
+    padding: 5px;
+
+    border: 1px solid #0003;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact__form label {
+    font-weight: 700;
+}
+
+.contact__button {
+    padding: 8px;
+
+    color: #fff;
+
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact__button:hover {
+    background-color: rgb(60, 127, 252);
+    transition: 100ms;
+}
+
+@media (max-width: 520px) {
+    .contact__form {
+        width: 100%;
+    }
+}
