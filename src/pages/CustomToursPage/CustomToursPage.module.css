@@ -1,12 +1,25 @@
-.excursion__section {
+.custom {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+
+  margin-bottom: 40px;
+}
+
+.custom__description {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.custom__contact {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .excursion__imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   gap: 20px;
 }
 
@@ -21,10 +34,6 @@
 .excursion__img:hover {
   transform: scale(1.5);
   transition: 200ms;
-}
-
-.excursion__description {
-  text-align: justify;
 }
 
 @media (max-width: 1100px) {
@@ -45,6 +54,14 @@
 }
 
 @media (max-width: 767px) {
+  .custom {
+    margin-bottom: 20px;
+  }
+
+  .custom__description {
+    margin-bottom: 20px;
+  }
+  
   .excursion__imgs {
     grid-template-columns: 1fr;
     order: 2;
@@ -52,5 +69,9 @@
 
   .excursion__img {
     height: 400px;
+  }
+
+  .custom__contact {
+    margin-bottom: 20px;
   }
 }

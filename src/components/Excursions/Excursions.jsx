@@ -86,7 +86,7 @@ export const EXCURSIONS_INFO = [
       excursion_3_photo_3,
       excursion_3_photo_4,
       excursion_3_photo_5,
-      excursion_3_photo_6
+      excursion_3_photo_6,
     ],
     title: (
       <>
