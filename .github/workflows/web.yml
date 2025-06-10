@@ -52,7 +52,7 @@ name: Build and deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main
 
 permissions:
   contents: read
@@ -83,11 +83,6 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v2
-
-      - name: Upload artifact
-        uses: actions/upload-page-artifact@v1  
-        with:
-          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
